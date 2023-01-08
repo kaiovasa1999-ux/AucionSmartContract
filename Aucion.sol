@@ -84,7 +84,7 @@ contract Aucion {
         uint256 lastbiggestBid = fundsPerBidder[highestBidder];
 
         require(
-            newBid > lastbiggestBid + 5,
+            newBid > lastbiggestBid + 5 ether,
             "you have to bid with 5 eth more then the biggest bid"
         );
 
