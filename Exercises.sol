@@ -50,4 +50,8 @@ contract Mappings {
     function getLastValue() external view returns (uint256) {
         return balances2[keys[keys.length - 1]];
     }
+
+    function getSpecificBlance2(uint256 _i) external view returns (uint256) {
+        return balances2[keys[_i]];
+    }
 }
