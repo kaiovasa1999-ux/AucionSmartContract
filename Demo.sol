@@ -74,17 +74,17 @@ contract MappingEnnumes {
     function specificContinet(uint8 continent)
         public
         pure
-        returns (string memory)
+        returns (bytes32)
     {
-        if (continent == uint8(continents.Africa)) return "Africa";
-        if (continent == uint8(continents.Europe)) return "Europe";
+        if (continent == uint8(continents.Africa)) return bytes32( "Africa");
+        if (continent == uint8(continents.Europe)) return bytes32("Europe");
         if (continent == uint8(continents.South_America))
-            return "South_America";
+            return bytes32("South_America");
         if (continent == uint8(continents.North_America))
-            return "North_America";
-        if (continent == uint8(continents.Asia)) return "Asia";
-        if (continent == uint8(continents.Austrailia)) return "Austrailia";
-        if (continent == uint8(continents.Antartica)) return "Antartica";
+            return bytes32 ("North_America");
+        if (continent == uint8(continents.Asia)) return  bytes32("Asia");
+        if (continent == uint8(continents.Austrailia)) return bytes32("Austrailia");
+        if (continent == uint8(continents.Antartica)) return bytes32("Antartica");
     }
 
     function removeCapital(string memory CountryCapital) public {
